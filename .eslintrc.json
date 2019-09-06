@@ -1,0 +1,108 @@
+{
+  "extends": [
+    "airbnb", "prettier", "prettier/react"
+  ],
+  "parser": "babel-eslint",
+  "plugins": [
+    "import", "react", "prettier", "react-hooks"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "camelcase": "off",
+    "class-methods-use-this": "off",
+    "global-require": "off",
+    "import/default": 2,
+    "import/export": 2,
+    "import/named": 2,
+    "import/namespace": 2,
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": "error",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/label-has-associated-control": "warn",
+    "jsx-a11y/no-noninteractive-element-interactions": "warn",
+    "jsx-a11y/no-noninteractive-tabindex": "off",
+    "jsx-a11y/no-static-element-interactions": "warn",
+    "no-else-return": "off",
+    "no-nested-ternary": "off",
+    "no-param-reassign": "off",
+    "no-restricted-syntax": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": "warn",
+    "prefer-destructuring": "warn",
+    "prefer-rest-params": "warn",
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react/destructuring-assignment": "off",
+    "react/jsx-no-bind": "warn",
+    "react/no-access-state-in-setstate": "warn",
+    "react/no-array-index-key": [0],
+    "react/no-did-mount-set-state": "warn",
+    "react/no-unescaped-entities": "off",
+    "react/no-unused-state": "off",
+    "react/prop-types": [0],
+    "semi": "off",
+    "prettier/prettier": [
+      "warn", {
+        "printWidth": 120,
+        "semi": false,
+        "singleQuote": true
+      }
+    ],
+    "max-len": [
+      "warn", {
+        "code": 300
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      0, {
+        "components": ["Link"],
+        "specialLink": [
+          "hrefLeft", "hrefRight"
+        ],
+        "aspects": ["noHref", "invalidHref", "preferButton"]
+      }
+    ],
+
+    "react/jsx-filename-extension": [
+      0, {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "react/prefer-stateless-function": [
+      1, {
+        "ignorePureComponents": false
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "off", {
+        "devDependencies": false
+      }
+    ]
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "globals": {
+    "CONF_BASE_URL": true,
+    "CONF_POMONA_WEB": true,
+    "CONF_SECRET": true,
+    "CONF_NODE_ENV": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      },
+      "babel-module": {}
+    }
+  }
+}
